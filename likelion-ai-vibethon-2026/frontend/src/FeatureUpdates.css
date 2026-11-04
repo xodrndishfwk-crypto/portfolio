@@ -1,0 +1,7 @@
+.date-heading { display: flex; align-items: center; gap: 14px; margin: 28px 0 11px; }
+.dated-response:first-child .date-heading { margin-top: 0; }
+.date-heading > div { display: flex; align-items: baseline; gap: 8px; white-space: nowrap; }
+.date-heading b { font: 700 14px var(--serif); color: var(--ink); }
+.date-heading span { color: var(--terra); font-size: 9px; background: #f0ded3; border-radius: 12px; padding: 4px 8px; }
+.date-heading > i { height: 1px; flex: 1; background: var(--line); }
+.emotion-icon { font-family: 'Segoe UI Emoji','Apple Color Emoji',sans-serif !important; filter: none; }

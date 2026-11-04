@@ -1,0 +1,2 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+:root{font-family:'Noto Sans KR',system-ui,sans-serif;color:#3d3029;background:#f7f0e7;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;min-height:100vh}button,textarea{font:inherit}button{color:inherit}button:focus-visible,textarea:focus-visible{outline:3px solid #a6533540;outline-offset:2px}::selection{background:#e4bda7}

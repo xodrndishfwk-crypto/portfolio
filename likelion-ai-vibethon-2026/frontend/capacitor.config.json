@@ -1,0 +1,9 @@
+{
+  "appId": "com.seuljjeock.app",
+  "appName": "슬쩍",
+  "webDir": "dist",
+  "server": {
+    "cleartext": true,
+    "androidScheme": "https"
+  }
+}

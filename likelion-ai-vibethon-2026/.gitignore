@@ -1,0 +1,27 @@
+# Python virtual environment
+backend/.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Frontend
+node_modules/
+dist/
+# Local databases and private settings
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+.env.*
+!.env.example
