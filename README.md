@@ -17,3 +17,14 @@
 
 - [프로젝트 소개](won-island/README.md)
 - [화면 목업 6개가 포함된 제안서 (PDF)](won-island/WON_Island_proposal_with_6_screens.pdf)
+
+## AI 빅콘테스트 | 사회적 고립 예방
+
+활동 저조 공간을 분석하고 생활권 자원을 연결하는 프로젝트입니다. 분석 코드, 실행 노트북, 발표자료와 기존 검증 기록을 정리했습니다.
+
+- [프로젝트 소개 및 실행 안내](ai-bigcontest/README.md)
+- [단계별 분석 코드](ai-bigcontest/src/stages/)
+- [통합 실행 노트북](ai-bigcontest/notebooks/2026_full_submission_pipeline.ipynb)
+- [발표자료 (PowerPoint)](ai-bigcontest/2026_빅콘테스트_발표자료_사회적고립예방_AI에이전트.pptx)
+
+원자료는 포함하지 않으며, 실행에 필요한 데이터와 검증 범위는 프로젝트 소개를 참고하세요.

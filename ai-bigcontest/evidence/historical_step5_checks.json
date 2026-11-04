@@ -1,0 +1,23 @@
+{
+  "rows": 429825,
+  "latest_month": 202512,
+  "latest_eligible": 42424,
+  "high_risk_rows": 2125,
+  "unique_high_risk_grids": 975,
+  "scenario_rows": 12750,
+  "no_youth_center": true,
+  "formula_median_probability_0_5_check": true,
+  "probability_range_monotonicity_and_status_checks": true,
+  "source": "./private_inputs/workspace\\full_submission_notebook\\submission_run_20261026_233513\\baseline",
+  "alpha_source": "./private_inputs/workspace\\full_submission_notebook\\submission_run_20261026_233513\\alpha\\results",
+  "AFT_specification": "five pooled age models, common five infrastructure X plus region indicator; no A/B/C comparison added",
+  "selection_rule": "latest month eligible, within region-age lowest remaining median 5%; ties retained",
+  "calendar": "July=0, December=5; next1/2m at December = Jan/Feb 2026, model extrapolation",
+  "interpretation": "low-activity-label onset not diagnosed individual isolation; scenario delta model sensitivity not causal impact",
+  "inputs_sha256": {
+    "scores": "a9c88cd7e6f3a6e09b8b9a294839fa5264feac84ebb93fa8f55cfb6b74f27165",
+    "audit": "3c95da6849ba92baefd5c25d4ec7fea6a1faf1b73e04f92fc6e40765fde77562",
+    "models": "fd541918fecc0d63cfbb063e6891cbf42ca49f7596554ca12112ff505601e205",
+    "alpha_meta": "8845fe0a62ec5e33765150a8164ec6e416961896679ce68bc6ae211f9d23767d"
+  }
+}

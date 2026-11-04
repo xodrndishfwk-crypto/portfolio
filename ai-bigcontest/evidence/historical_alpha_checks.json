@@ -1,0 +1,11 @@
+{
+  "gravity_spotcheck_groups": 60,
+  "gravity_spotcheck_rows": 895,
+  "source_input_hashes_unchanged": true,
+  "alpha_positive": true,
+  "alpha_group_mean_one": true,
+  "no_spatial_cell_split_overlap": true,
+  "labels_unchanged": true,
+  "heldout_rows": 9085,
+  "not_future_period_test": true
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "stage": "0-1",
+    "mode": "existing_preprocessing_copied",
+    "seconds": 0
+  },
+  {
+    "stage": "0-2",
+    "mode": "optional_map_not_requested",
+    "seconds": 0
+  },
+  {
+    "stage": "1-1",
+    "mode": "existing_mass_copied",
+    "seconds": 0
+  },
+  {
+    "stage": "3-1",
+    "mode": "existing_labels_copied",
+    "seconds": 0
+  },
+  {
+    "stage": "2-1",
+    "mode": "baseline_inputs_and_exposures_copied; AFT_function_defined_inline",
+    "seconds": 0
+  },
+  {
+    "stage": "4-1",
+    "mode": "alpha_gravity_and_AFT_recomputed",
+    "seconds": 23.522433042526245
+  },
+  {
+    "stage": "4-2",
+    "mode": "export_and_gravity_checks_recomputed",
+    "seconds": 1.8122599124908447
+  },
+  {
+    "stage": "4-3",
+    "mode": "probabilities_recomputed",
+    "seconds": 0.46354103088378906
+  },
+  {
+    "stage": "5-1",
+    "mode": "time_risk_priority_scenarios_recomputed",
+    "seconds": 11.732360124588013
+  },
+  {
+    "stage": "6-1",
+    "mode": "routing_and_facility_decomposition_recomputed",
+    "seconds": 11.998817443847656
+  },
+  {
+    "stage": "6-2",
+    "mode": "verified_catalog_constructed",
+    "seconds": 0.0010046958923339844
+  },
+  {
+    "stage": "6-3",
+    "mode": "conditional_service_and_site_scenarios_recomputed",
+    "seconds": 3.052988052368164
+  },
+  {
+    "stage": "6-4",
+    "mode": "PDF_cards_recomputed",
+    "seconds": 1.1924350261688232
+  }
+]

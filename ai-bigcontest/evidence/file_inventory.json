@@ -1,0 +1,191 @@
+[
+  {
+    "original_file": "2026_full_submission_pipeline.ipynb",
+    "source_group": "local_working_copy",
+    "public_file": "notebooks/2026_full_submission_pipeline.ipynb",
+    "original_sha256": "73ed1bfd1830217db9571c9d181ef6de77ffd14fbdc31049c3c1c28bf894511a",
+    "public_sha256": "9a501f0cb3b2f64c3fb1f013c1c1767ed85c8ce0817ac2fb58f925ac6ee176cf",
+    "removed_output_blocks": 62,
+    "changes": "personal paths replaced; notebook outputs, attachments and metadata cleared"
+  },
+  {
+    "original_file": "2026_isolation_prevention_pipeline_revised.ipynb",
+    "source_group": "local_working_copy",
+    "public_file": "notebooks/review_existing_results.ipynb",
+    "original_sha256": "3cda97aec94fc492125ca1daf0980de02c9a9167c2cb49c7e1b048e3f2e12cce",
+    "public_sha256": "5293bc8cf20dc2ac9730155cc5f451c35481e843039d6a692d8aa419f03edf41",
+    "removed_output_blocks": 40,
+    "changes": "personal paths replaced; notebook outputs, attachments and metadata cleared"
+  },
+  {
+    "original_file": "0-1 사전분석 monthly_space_selection.ipynb",
+    "source_group": "dd",
+    "public_file": "notebooks/stages/0-1 사전분석 monthly_space_selection.ipynb",
+    "original_sha256": "422237c4c5fdd5bac4c80ec74f44d540e645368712037a638fbc56717c7eae7d",
+    "public_sha256": "df804a31de3da75d7eae74a77ec99b4eda552afeaa0a2e52955203f3ecc843cd",
+    "removed_output_blocks": 8,
+    "changes": "personal paths replaced; notebook outputs, attachments and metadata cleared"
+  },
+  {
+    "original_file": "0-2 사전분석지도 monthly_age_score_map.ipynb",
+    "source_group": "dd",
+    "public_file": "notebooks/stages/0-2 사전분석지도 monthly_age_score_map.ipynb",
+    "original_sha256": "c1cb065819844c256a415810659cbe7224ebd771f624a991e3be448741bbf58c",
+    "public_sha256": "af7be7c4bc726f3c88d268e86e2dbf1c2243f387a3f65be23f1ce8d241a5a1b1",
+    "removed_output_blocks": 0,
+    "changes": "personal paths replaced; notebook outputs, attachments and metadata cleared"
+  },
+  {
+    "original_file": "1-1 시설질량M build_surrounding_mass.py",
+    "source_group": "dd",
+    "public_file": "src/stages/1-1 시설질량M build_surrounding_mass.py",
+    "original_sha256": "05ffc5b34a810fdee551ae5c83346bf276dfad592d270b60e1cc020a5e3f7604",
+    "public_sha256": "436f3633fb03169e979ee54beae8df7b8f15d186019333ef8651f16a705ac07a",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "2-1 중력X run_step4_aft.py",
+    "source_group": "dd",
+    "public_file": "src/stages/2-1 중력X run_step4_aft.py",
+    "original_sha256": "8d79af4e9b892d10f861ac475b1f153211fba2e3d589586e933ad52482e236e4",
+    "public_sha256": "e7e39b8c3417e3fe3a9bd0588ee6bc3cd1cda5d7cfe4355550c072c8ea2a1b7d",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "3-1 생존라벨 build_survival_labels.py",
+    "source_group": "dd",
+    "public_file": "src/stages/3-1 생존라벨 build_survival_labels.py",
+    "original_sha256": "1225f956a10c05cbb22ae766cf88561ef9c475dba9f1a3392a1e3bb8e0ea2481",
+    "public_sha256": "ca63870e831630e5d0634414d21ca2a4d263d9cc4a6786ef0fda985ba140dd1f",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "4-1 보정및AFT run_alpha.py",
+    "source_group": "dd",
+    "public_file": "src/stages/4-1 보정및AFT run_alpha.py",
+    "original_sha256": "bc0e8263918b207824e6f797088c2f69aa59e9c0d89c8c9a2ca62836cc1518df",
+    "public_sha256": "82e02f6ee37f413a343c511c498b99603651baa451b7e725bd1f5d0a9a26d074",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "4-2 결과정리 export_results.py",
+    "source_group": "dd",
+    "public_file": "src/stages/4-2 결과정리 export_results.py",
+    "original_sha256": "1029ce74d6200f3984e4742982466ac81533661b2f49090cf67dffcd1d7614df",
+    "public_sha256": "575790d580c989b65110ca78e92c68f0a5a593291e765db11f4049bb14893dac",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "4-3 확률계산 predict_alpha.py",
+    "source_group": "dd",
+    "public_file": "src/stages/4-3 확률계산 predict_alpha.py",
+    "original_sha256": "db04cff29de0ea2d462bd4cc004f8f1b88badd7f6ab58ecaf1a548a28d9042b5",
+    "public_sha256": "15eac5c6f2ec9cdecd5e1822351d082691b66832c807f66bb9eecf398404e496",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "5-1 골든타임시나리오 run_step5_alpha.py",
+    "source_group": "dd",
+    "public_file": "src/stages/5-1 골든타임시나리오 run_step5_alpha.py",
+    "original_sha256": "beeb7a140f72b607229781aba100e9dbb4dc5f3f34b1a17efc2f7373fd7617d6",
+    "public_sha256": "9d2c050c2ab9d6bc4cae5df5ffd8c353df747940290bd6a770b448a6149dd747",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "6-1 대응유형및거점후보 run_step6_parts12.py",
+    "source_group": "dd",
+    "public_file": "src/stages/6-1 대응유형및거점후보 run_step6_parts12.py",
+    "original_sha256": "87f67415a634e472a065ea17d169fb60d3cd568bb72441fb4c1ce3c82bad5314",
+    "public_sha256": "0184bb4902874c7b3a1dd94bb99b9beb2c91e12e54a6bf30b3b877ffc2d26881",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "6-2 서비스카탈로그 build_catalog.py",
+    "source_group": "dd",
+    "public_file": "src/stages/6-2 서비스카탈로그 build_catalog.py",
+    "original_sha256": "63c3e23a212c124d0c813f50ca63202ab95a60497b37c4d0c4f77fba0f875fe1",
+    "public_sha256": "6be5fd57472735201716be7615c857f490a9bd65d69e014ae088903d0385f005",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "6-3 조건부서비스연결 run_proposal_demo.py",
+    "source_group": "dd",
+    "public_file": "src/stages/6-3 조건부서비스연결 run_proposal_demo.py",
+    "original_sha256": "e571f696d123d8e922176840a214c1eedf488d36fae12358b55bc66bb521a74f",
+    "public_sha256": "aeb618be10e04719d3224d8c7cc491b48c9b74759e653e6858ca86adf36b7d28",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "6-4 예방개입카드 build_cards.py",
+    "source_group": "dd",
+    "public_file": "src/stages/6-4 예방개입카드 build_cards.py",
+    "original_sha256": "ea86a45d03a8167f400cba077aa11d421af4a952534e2b06ec14682b03048234",
+    "public_sha256": "8f7b9554d684ab121d3db611ff315dc6a04c30a649a30ba0bbe9ab9ae9f142df",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "step4_maps.py",
+    "source_group": "local_working_copy",
+    "public_file": "src/stages/step4_maps.py",
+    "original_sha256": "ec4b1f06d05dfa0beb4bcbf011b26f5979336d8cc84ec7d9ac7b2c80e79fc91a",
+    "public_sha256": "3a7e98bafe4f17e19b444a8b16923396e4239c87703844bd5a271bc27173dca1",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "verification.json",
+    "source_group": "local_working_copy",
+    "public_file": "evidence/verification.json",
+    "original_sha256": "c21aac768d6cc6c0865995039a1c1dfba4dc9d7fbdcf4e9d8ee4acc51f0d8c8a",
+    "public_sha256": "6fcea4ce3cdcfeccdce6ed04584c9b639d4b21a5f1a73aa1a36861f426319de9",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "source_manifest.json",
+    "source_group": "local_working_copy",
+    "public_file": "evidence/integrated_source_manifest.json",
+    "original_sha256": "a7f4b55aedb33e44569cc34db677823143b6b3ae0e017d4dd44a2e366fd9b07b",
+    "public_sha256": "5eb639480d5493c367a653453b45ebefe0969c9720ac985fa5ea63517f129f83",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "execution_log.json",
+    "source_group": "local_working_copy",
+    "public_file": "evidence/historical_execution_log.json",
+    "original_sha256": "c13ef19971e520dacb92e276dcce56e128c602c82935658c0b8d7857bb0a23fa",
+    "public_sha256": "09274ed3490b7098bc47750f6528f4b2abf1ec5534eb20d539d2224a28468b30",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "verification.json",
+    "source_group": "local_working_copy",
+    "public_file": "evidence/historical_alpha_checks.json",
+    "original_sha256": "060cf3edad5c07407608f58215023655eccf45cb8904018a9c916ba00bc15987",
+    "public_sha256": "5d0c49ed021ae574573c79a1e1abbc514f552f03b71fe237b21e8fb80b36eaea",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  },
+  {
+    "original_file": "validation_report.json",
+    "source_group": "local_working_copy",
+    "public_file": "evidence/historical_step5_checks.json",
+    "original_sha256": "ff0b57c36cdde4c16a161f93aac9c772429c6057d943679b62db25be98ee2984",
+    "public_sha256": "bba4a13acadfe0d27b0a81d483ab1964f8f069f273d55246c47795dd84f406a3",
+    "removed_output_blocks": null,
+    "changes": "personal paths replaced"
+  }
+]

@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+geopandas
+pyogrio
+shapely
+pyproj
+matplotlib
+IPython
+jupyterlab
+nbformat
+lifelines
+reportlab

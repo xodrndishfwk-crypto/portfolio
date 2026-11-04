@@ -1,0 +1,29 @@
+{
+  "analysis_rerun": false,
+  "checks": [
+    "Python AST parse",
+    "notebook JSON v4",
+    "outputs cleared",
+    "personal home path removed",
+    "common secret token patterns absent"
+  ],
+  "checked_code_files": [
+    "notebooks/2026_full_submission_pipeline.ipynb",
+    "notebooks/review_existing_results.ipynb",
+    "notebooks/stages/0-1 사전분석 monthly_space_selection.ipynb",
+    "notebooks/stages/0-2 사전분석지도 monthly_age_score_map.ipynb",
+    "src/stages/1-1 시설질량M build_surrounding_mass.py",
+    "src/stages/2-1 중력X run_step4_aft.py",
+    "src/stages/3-1 생존라벨 build_survival_labels.py",
+    "src/stages/4-1 보정및AFT run_alpha.py",
+    "src/stages/4-2 결과정리 export_results.py",
+    "src/stages/4-3 확률계산 predict_alpha.py",
+    "src/stages/5-1 골든타임시나리오 run_step5_alpha.py",
+    "src/stages/6-1 대응유형및거점후보 run_step6_parts12.py",
+    "src/stages/6-2 서비스카탈로그 build_catalog.py",
+    "src/stages/6-3 조건부서비스연결 run_proposal_demo.py",
+    "src/stages/6-4 예방개입카드 build_cards.py",
+    "src/stages/step4_maps.py"
+  ],
+  "scope": "packaging checks, not scientific reproduction or rights clearance"
+}

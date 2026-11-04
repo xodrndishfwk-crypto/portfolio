@@ -1,0 +1,25 @@
+{
+  "mode": "replay",
+  "code_cells_executed": 43,
+  "all_passed": true,
+  "source_steps": [
+    "0-1",
+    "0-2",
+    "1-1",
+    "2-1",
+    "3-1",
+    "4-1",
+    "4-2",
+    "4-3",
+    "5-1",
+    "6-1",
+    "6-2",
+    "6-3",
+    "6-4",
+    "maps"
+  ],
+  "raw_steps": "existing Step0-3 reused; raw rebuild code compiled but full raw rebuild not executed",
+  "recomputed": "Step4 alpha gravity and AFT including train/validation/test; Step5; Step6 routing/candidates/catalog/site comparison/PDF",
+  "elapsed_seconds": 63.99967813491821,
+  "run_path": "./private_inputs/workspace\\full_submission_notebook\\submission_run_20261026_233513"
+}

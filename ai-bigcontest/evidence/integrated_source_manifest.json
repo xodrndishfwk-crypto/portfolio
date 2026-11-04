@@ -1,0 +1,72 @@
+{
+  "0-1": {
+    "filename": "0-1 사전분석 monthly_space_selection.ipynb",
+    "original_sha256": "422237c4c5fdd5bac4c80ec74f44d540e645368712037a638fbc56717c7eae7d",
+    "code_lines": 249
+  },
+  "0-2": {
+    "filename": "0-2 사전분석지도 monthly_age_score_map.ipynb",
+    "original_sha256": "c1cb065819844c256a415810659cbe7224ebd771f624a991e3be448741bbf58c",
+    "code_lines": 153
+  },
+  "1-1": {
+    "filename": "1-1 시설질량M build_surrounding_mass.py",
+    "original_sha256": "05ffc5b34a810fdee551ae5c83346bf276dfad592d270b60e1cc020a5e3f7604",
+    "code_lines": 431
+  },
+  "2-1": {
+    "filename": "2-1 중력X run_step4_aft.py",
+    "original_sha256": "8d79af4e9b892d10f861ac475b1f153211fba2e3d589586e933ad52482e236e4",
+    "code_lines": 219
+  },
+  "3-1": {
+    "filename": "3-1 생존라벨 build_survival_labels.py",
+    "original_sha256": "1225f956a10c05cbb22ae766cf88561ef9c475dba9f1a3392a1e3bb8e0ea2481",
+    "code_lines": 137
+  },
+  "4-1": {
+    "filename": "4-1 보정및AFT run_alpha.py",
+    "original_sha256": "bc0e8263918b207824e6f797088c2f69aa59e9c0d89c8c9a2ca62836cc1518df",
+    "code_lines": 121
+  },
+  "4-2": {
+    "filename": "4-2 결과정리 export_results.py",
+    "original_sha256": "1029ce74d6200f3984e4742982466ac81533661b2f49090cf67dffcd1d7614df",
+    "code_lines": 92
+  },
+  "4-3": {
+    "filename": "4-3 확률계산 predict_alpha.py",
+    "original_sha256": "db04cff29de0ea2d462bd4cc004f8f1b88badd7f6ab58ecaf1a548a28d9042b5",
+    "code_lines": 10
+  },
+  "5-1": {
+    "filename": "5-1 골든타임시나리오 run_step5_alpha.py",
+    "original_sha256": "beeb7a140f72b607229781aba100e9dbb4dc5f3f34b1a17efc2f7373fd7617d6",
+    "code_lines": 61
+  },
+  "6-1": {
+    "filename": "6-1 대응유형및거점후보 run_step6_parts12.py",
+    "original_sha256": "87f67415a634e472a065ea17d169fb60d3cd568bb72441fb4c1ce3c82bad5314",
+    "code_lines": 65
+  },
+  "6-2": {
+    "filename": "6-2 서비스카탈로그 build_catalog.py",
+    "original_sha256": "63c3e23a212c124d0c813f50ca63202ab95a60497b37c4d0c4f77fba0f875fe1",
+    "code_lines": 16
+  },
+  "6-3": {
+    "filename": "6-3 조건부서비스연결 run_proposal_demo.py",
+    "original_sha256": "e571f696d123d8e922176840a214c1eedf488d36fae12358b55bc66bb521a74f",
+    "code_lines": 68
+  },
+  "6-4": {
+    "filename": "6-4 예방개입카드 build_cards.py",
+    "original_sha256": "ea86a45d03a8167f400cba077aa11d421af4a952534e2b06ec14682b03048234",
+    "code_lines": 61
+  },
+  "maps": {
+    "filename": "step4_maps.py",
+    "original_sha256": "ec4b1f06d05dfa0beb4bcbf011b26f5979336d8cc84ec7d9ac7b2c80e79fc91a",
+    "code_lines": 200
+  }
+}
