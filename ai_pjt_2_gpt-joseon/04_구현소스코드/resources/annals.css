@@ -1,0 +1,25 @@
+/* 기록의 여백과 먹색을 참고한 현대적인 독서 화면. 상단 제목은 유지한다. */
+:root { color-scheme: light; }
+[data-testid="stAppViewContainer"] { background: #f4efe3; color: #28251f; }
+[data-testid="stHeader"] { background: #f4efe3e8; }
+[data-testid="stSidebar"] { background: #e7dfcf; border-right: 1px solid #c9bea7; }
+[data-testid="stMainBlockContainer"] { max-width: 1080px; }
+[data-testid="stAppViewContainer"] h1,
+[data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3 { font-family: "Batang", "바탕", serif; color: #302b22; }
+[data-testid="stMarkdownContainer"] p { line-height: 1.95; color: #302b22; }
+[data-testid="stCaptionContainer"] p { color: #6d6558; }
+[data-testid="stChatMessage"] { background: #fbf8f0; border: 1px solid #d9cfbd; border-radius: 3px; padding: 1.4rem; margin: 1rem 0; }
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) { background: #ede5d6; }
+[data-testid="stChatMessageAvatarAssistant"] { background: #865044; color: #fff8e8; }
+[data-testid="stExpander"] { border-color: #cfc3ad; border-radius: 3px; }
+[data-testid="stButton"] button,
+[data-testid="stLinkButton"] a { background: #f8f3e8; color: #493e2d; border: 1px solid #bfb198; border-radius: 3px; }
+[data-testid="stButton"] button:hover { border-color: #8e4d3d; color: #8e4d3d; }
+[data-testid="stBottom"], [data-testid="stBottomBlockContainer"] { background: #f4efe3; }
+[data-testid="stChatInput"] { background: #fffaf0; border: 1px solid #bbae94; border-radius: 4px; }
+[data-testid="stChatInputTextArea"] { color: #302b22; }
+[data-baseweb="select"] > div, [data-baseweb="input"] { background: #faf6ed; color: #302b22; }
+blockquote { border-left: 3px solid #8e4d3d !important; padding: .5rem 1rem !important; background: #eee6d5; }
+a { color: #874d39; }
+@media(max-width: 700px) { [data-testid="stChatMessage"] { padding: .9rem; } }

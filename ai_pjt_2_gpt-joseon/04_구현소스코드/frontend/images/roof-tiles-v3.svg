@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="132" viewBox="0 0 144 132" preserveAspectRatio="none">
+<defs>
+<linearGradient id="trough" x2="0" y2="1"><stop stop-color="#43504d"/><stop offset=".18" stop-color="#263330"/><stop offset=".82" stop-color="#151f20"/><stop offset="1" stop-color="#0b1418"/></linearGradient>
+<linearGradient id="barrel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#172426"/><stop offset=".08" stop-color="#3e504d"/><stop offset=".25" stop-color="#79847a"/><stop offset=".43" stop-color="#6d7b72"/><stop offset=".66" stop-color="#4d6059"/><stop offset=".88" stop-color="#2a3c39"/><stop offset="1" stop-color="#152426"/></linearGradient>
+<linearGradient id="course" x2="0" y2="1"><stop stop-color="#b8b9a3" stop-opacity=".2"/><stop offset=".2" stop-color="#000" stop-opacity="0"/><stop offset=".78" stop-color="#000" stop-opacity=".03"/><stop offset="1" stop-color="#071318" stop-opacity=".48"/></linearGradient>
+<pattern id="tile" width="72" height="44" patternUnits="userSpaceOnUse">
+<path d="M0 0H72V44H0Z" fill="url(#trough)"/>
+<path d="M0 38Q36 48 72 38" fill="none" stroke="#758078" stroke-opacity=".35" stroke-width="2"/>
+<!-- 72px repeat, center at 36px, 52px barrel width matches the end cap diameter. -->
+<path d="M13 -4H66V40Q41 51 13 40Z" fill="#050f13" opacity=".65"/>
+<path d="M10 -4Q36 -10 62 -4V38Q36 48 10 38Z" fill="url(#barrel)" stroke="#152a2b" stroke-width="1"/>
+<path d="M10 -4Q36 -10 62 -4V38Q36 48 10 38Z" fill="url(#course)"/>
+<path d="M10 0Q36 11 62 0" fill="none" stroke="#0c1c20" stroke-opacity=".7" stroke-width="2.8"/>
+<path d="M11 2Q36 12 61 2" fill="none" stroke="#abb09b" stroke-opacity=".32" stroke-width="1"/>
+<path d="M22 10Q20 23 21 36" fill="none" stroke="#ccd0ba" stroke-opacity=".09"/>
+<path d="M12 38Q36 47 60 38" fill="none" stroke="#a7ae97" stroke-opacity=".15"/>
+</pattern></defs><path fill="url(#tile)" d="M0 0H144V132H0Z"/></svg>

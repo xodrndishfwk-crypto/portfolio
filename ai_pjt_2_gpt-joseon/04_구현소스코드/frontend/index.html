@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ㅈㅍㅌ - 조선 · 훈장님의 서재</title><link rel="stylesheet" href="/assets/style.css?v=20261023-warmmountain2"><script defer src="/assets/vendor/vue.global.prod.js"></script><script defer src="/assets/app.js?v=20261022-scroll1"></script></head>
+<body><div id="app" v-cloak>
+  <aside class="library" :class="{open:navOpen}">
+    <a class="brand" href="/" aria-label="GPT-Joseon 첫 화면"><span class="brand-portrait"><img src="/assets/images/teacher-v1.png" alt="귀여운 훈장님"></span><span>훈장님의 서재<small>기록을 따라, 조선을 읽다</small></span></a>
+    <button class="new-chat" @click="clearChat" :disabled="busy">＋ 이 시기의 새 대화</button>
+    <div class="section-label">왕과 시기로 둘러보기</div>
+    <label>왕대<select aria-label="왕대" v-model="king" @change="changeKing" :disabled="busy"><option value="">전체 왕대</option><option v-for="k in kings" :key="k">{{k}}</option></select></label>
+    <label>재위 연도<select aria-label="재위 연도" v-model="periodId" :disabled="busy"><option value="">전체 시기에서 질문</option><option v-for="p in availablePeriods" :value="p.id" :key="p.id">{{p.title}} · {{p.year}}</option></select></label>
+    <form @submit.prevent="explore"><label>사건이나 조건으로 찾기<input v-model="condition" placeholder="임진왜란이 시작된 시기" :disabled="busy" maxlength="2000"></label><button class="explore" :disabled="busy || !condition.trim()">기록으로 시기 찾기 ↗</button></form>
+    <div v-if="exploreMessage" class="muted" role="status">{{exploreMessage}}</div>
+    <div v-for="r in matches" class="match" :key="r.period.id"><button @click="selectPeriod(r.period)" :disabled="busy">{{r.period.title}} · {{r.period.year}} →</button><small>{{r.reason}}</small><a :href="safeUrl(r.url)" target="_blank" rel="noopener noreferrer">탐색 근거</a></div>
+    <div class="teacher-companion" :class="{searching:busy&&!isTeaching,teaching:isTeaching}" role="img" :aria-label="busy?'기록을 살펴보는 훈장님':'곰방대로 대목을 짚어주는 훈장님'">
+      <div class="teacher-figure"><img class="teacher-body" src="/assets/images/teacher-v1.png" alt=""><img class="teacher-eyes" src="/assets/images/teacher-eyes-open-v1.png" alt=""><img class="teacher-arm" src="/assets/images/teacher-v1.png" alt=""></div>
+      <p>{{busy ? '어디, 기록을 살펴볼까…' : '궁금한 게 있으면 물어보렴.'}}</p>
+    </div>
+    <button class="lab-link" @click="openLab">⚙ 검색 실험실</button><small class="local-note">대화는 이 브라우저에 저장됩니다. · <a href="/assets/fonts/NOTICE.txt" target="_blank" rel="noopener noreferrer">글꼴 안내</a></small>
+  </aside>
+  <main>
+    <div class="mountain-backdrop" aria-hidden="true"></div>
+    <div class="ink-landscape" aria-hidden="true">
+      <div class="ink-margin ink-margin-left">
+        <div class="bamboo-grove"><i class="ink-sprite ink-bamboo"><svg viewBox="0 0 500 535" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-1" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="500" height="535"/></clipPath></defs><image clip-path="url(#ink-crop-1)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i><i class="ink-sprite bamboo-leaves"><svg viewBox="0 0 500 535" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-2" clipPathUnits="userSpaceOnUse"><rect x="0" y="0" width="500" height="535"/></clipPath></defs><image clip-path="url(#ink-crop-2)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i></div>
+        <div class="resting-crane"><i class="ink-sprite crane-standing"><svg viewBox="1130 35 360 495" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-3" clipPathUnits="userSpaceOnUse"><rect x="1130" y="35" width="360" height="495"/></clipPath></defs><image clip-path="url(#ink-crop-3)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i><i class="ink-sprite crane-stretch-wing"><svg viewBox="0 535 455 470" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-4" clipPathUnits="userSpaceOnUse"><rect x="0" y="535" width="455" height="470"/></clipPath></defs><image clip-path="url(#ink-crop-4)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i></div>
+        <div class="flying-crane"><i class="ink-sprite crane-flight-body"><svg viewBox="465 685 650 210" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-5" clipPathUnits="userSpaceOnUse"><rect x="465" y="685" width="650" height="210"/></clipPath></defs><image clip-path="url(#ink-crop-5)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i><i class="ink-sprite crane-flight-wing wing-far"><svg viewBox="1130 550 380 455" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-6" clipPathUnits="userSpaceOnUse"><rect x="1130" y="550" width="380" height="455"/></clipPath></defs><image clip-path="url(#ink-crop-6)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i><i class="ink-sprite crane-flight-wing wing-near"><svg viewBox="1130 550 380 455" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-7" clipPathUnits="userSpaceOnUse"><rect x="1130" y="550" width="380" height="455"/></clipPath></defs><image clip-path="url(#ink-crop-7)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i></div>
+        <div class="flying-crane crane-distant"><i class="ink-sprite crane-flight-body"><svg viewBox="465 685 650 210" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-8" clipPathUnits="userSpaceOnUse"><rect x="465" y="685" width="650" height="210"/></clipPath></defs><image clip-path="url(#ink-crop-8)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i><i class="ink-sprite crane-flight-wing wing-far"><svg viewBox="1130 550 380 455" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-9" clipPathUnits="userSpaceOnUse"><rect x="1130" y="550" width="380" height="455"/></clipPath></defs><image clip-path="url(#ink-crop-9)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i><i class="ink-sprite crane-flight-wing wing-near"><svg viewBox="1130 550 380 455" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ink-crop-10" clipPathUnits="userSpaceOnUse"><rect x="1130" y="550" width="380" height="455"/></clipPath></defs><image clip-path="url(#ink-crop-10)" href="/assets/images/ink-garden-v1.png" width="1536" height="1024"/></svg></i></div>
+      </div>
+      <div class="ink-margin ink-margin-right"><div class="tiger-garden"><svg class="living-minhwa" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<linearGradient id="canopy-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="white"/><stop offset=".68" stop-color="white"/><stop offset="1" stop-color="black"/></linearGradient>
+<mask id="canopy-safe" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1536"><rect width="1024" height="1536" fill="black"/><rect x="40" y="0" width="725" height="205" fill="url(#canopy-fade)"/></mask>
+</defs>
+<image class="minhwa-intact" href="/assets/images/tiger-magpie-pine-v1.png" width="1024" height="1536"/>
+<g class="minhwa-pine"><image href="/assets/images/tiger-magpie-pine-v1.png" width="1024" height="1536" mask="url(#canopy-safe)"/></g>
+<g class="minhwa-magpie"><path class="magpie-lower-beak" d="M611 266L578 285L607 271Z" fill="#272826" stroke="#bdbeb4" stroke-width="2"/><g class="magpie-call-marks" fill="none" stroke="#4a4a40" stroke-width="3.5" stroke-linecap="round"><path d="M565 258L554 253M561 274L546 274M567 289L557 297"/></g></g>
+<g class="tiger-blink"><path d="M306 611Q326 573 358 600Q383 621 359 641Q326 657 306 627Z" fill="#e6e6d8"/><path d="M309 617Q339 638 369 613" fill="none" stroke="#152e43" stroke-width="7" stroke-linecap="round"/><path d="M427 555Q449 535 463 562Q476 590 450 601Q427 604 426 582Z" fill="#e6e6d8"/><path d="M429 574Q445 590 464 571" fill="none" stroke="#152e43" stroke-width="6" stroke-linecap="round"/></g></svg></div></div>
+    </div>
+    <header class="masthead"><button class="mobile-menu" @click="navOpen=!navOpen" aria-label="시기 탐색 메뉴">☰</button><h1 class="wolin-title plaque-title"><img src="/assets/images/title-plaque-black-v3.svg" alt="ㅈㅍㅌ - 조선" width="1000" height="300"></h1><span class="edition">훈장님과 배우는 조선 이야기</span></header>
+    <div class="reading-room">
+      <div class="chapter"><span>{{ selectedPeriod ? selectedPeriod.title+' · '+selectedPeriod.year : '태조에서 순종까지' }}</span><span>史 記</span></div>
+      <p v-if="selectedPeriod" class="scope">선택한 시기를 참고하되, 질문에 다른 시기가 나오면 함께 살펴보자꾸나.</p>
+      <section v-if="!messages.length" class="welcome"><div class="book-mark">기록을 펼치다</div><h2>어떤 역사가<br>궁금하니?</h2><p>날짜 하나에도 이야기가 있단다.<br>궁금한 일을 물어보렴. 그날의 기록부터 함께 살펴보자꾸나.</p><div class="examples"><button v-for="q in examples" @click="send(q)" :disabled="busy">{{q}} <span>↗</span></button></div></section>
+      <article v-for="(m,i) in messages" :key="m.id" :class="['message','scroll-letter',m.role]" v-scroll-letter="{animate:freshScrolls.has(m.id),role:m.role,consume:()=>freshScrolls.delete(m.id)}">
+        <span class="scroll-tie" aria-hidden="true"></span><div class="scroll-paper"><div class="scroll-content">
+        <template v-if="m.role==='user'"><span class="message-label">궁금한 이야기</span><p>{{m.content}}</p></template>
+        <template v-else>
+          <div class="scribe"><span class="teacher-avatar"><img src="/assets/images/teacher-v1.png" alt="훈장님"></span><span>{{m.answer.style_version?.startsWith('teacher-')?'훈장님의 이야기':'이전에 저장된 답변'}}<small>기록에서 배우는 조선 이야기</small></span></div>
+          <p class="answer-text">{{clean(m.answer.response?.text || '이 부분은 아직 정확히 확인하기 어렵구나. 확인한 내용은 기록에 남겨두었단다.')}}</p>
+          <div class="inline-cites"><button v-for="n in cited(m.answer.response)" @click="showSource(m,n)">[근거 {{n}}]</button></div>
+          <p v-if="m.answer.interpretation?.text" class="interpretation">{{clean(m.answer.interpretation.text)}}</p>
+          <div v-if="m.answer.interpretation?.text" class="inline-cites"><button v-for="n in cited(m.answer.interpretation)" @click="showSource(m,n)">[근거 {{n}}]</button></div>
+          <div v-if="m.answer.aside?.text" class="story"><span class="eyebrow">훈장님이 짚어주는 한 대목</span><p>{{clean(m.answer.aside.text)}}</p><div class="inline-cites"><button v-for="n in cited(m.answer.aside)" @click="showSource(m,n)">[근거 {{n}}]</button></div></div>
+          <section v-if="dayRecord(m)" class="day-record"><div class="record-heading"><span>그날의 기록</span><small>{{dayRecord(m).source.metadata.source_kind}}</small></div><h3>{{dayRecord(m).source.metadata.date || '날짜 미상'}}</h3><small>{{dayRecord(m).source.metadata.collection || dayRecord(m).source.metadata.title}} · 사료에 적힌 날짜 · 양력 환산 안 함</small><blockquote v-if="dayRecord(m).quote">{{dayRecord(m).quote}}</blockquote><p v-if="dayRecord(m).translation">{{dayRecord(m).translation}}</p><small v-if="dayRecord(m).translation">AI 발췌 번역 · 기존 국역과 구분</small><a :href="safeUrl(dayRecord(m).source.metadata.url)" target="_blank" rel="noopener noreferrer">원출처 ↗</a></section>
+          <div class="answer-tools"><button @click="showSource(m)">기록 살펴보기 <span>{{used(m).length}}개 인용 ↗</span></button><small v-if="m.elapsed">{{m.elapsed}}초</small></div>
+          <div v-if="i===messages.length-1 && dayRecord(m)" class="next-record"><span>다음 장면으로</span><button @click="continueRecord(m)" :disabled="busy">그 뒤의 기록 찾기 →</button></div>
+          <div v-if="i===messages.length-1 && m.answer.follow_up_questions?.length" class="next-record"><span>이야기를 이어가면</span><button v-for="q in m.answer.follow_up_questions.slice(0,2)" @click="send(q)" :disabled="busy">{{q}} →</button></div>
+        </template>
+        <div v-if="m.role==='assistant'" class="imperial-seal" aria-label="ㅈㅌ ㅍ인 도장"><span>ㅈ</span><span>ㅌ</span><span>ㅍ</span><span>인</span></div>
+        </div></div><img v-if="m.role==='assistant'" class="writing-brush" src="/assets/images/writing-brush.png" alt="" aria-hidden="true">
+      </article>
+      <div v-if="busy" class="progress" role="status"><span class="teacher-avatar progress-avatar"><img src="/assets/images/teacher-v1.png" alt=""></span>{{progress}}</div>
+      <div v-if="error" class="error" role="alert">{{error}} <button @click="send(lastQuestion,true)" v-if="lastQuestion && !busy">같은 질문 다시 보내기</button></div>
+      <p v-if="notice" class="muted" role="status">{{notice}}</p>
+      <div ref="bottom"></div>
+    </div>
+    <footer class="composer"><form @submit.prevent="send()"><label class="sr-only" for="question">훈장님에게 질문하기</label><textarea id="question" v-model="question" @keydown.enter.exact.prevent="send()" placeholder="궁금한 역사를 물어보렴. 함께 알아보자꾸나." rows="1" maxlength="2000" :disabled="busy"></textarea><button :disabled="busy || !question.trim()" aria-label="질문 보내기">↑</button></form><small>훈장님의 AI 해설이란다. 인용한 기록도 함께 읽어보렴.</small></footer>
+  </main>
+  <div v-if="drawer" class="veil" @click.self="drawer=null" @keydown.esc="drawer=null">
+    <section class="drawer" role="dialog" aria-modal="true" :aria-label="drawer==='lab'?'검색 실험실':'기록 살펴보기'" tabindex="-1" ref="dialog">
+      <header><h2>{{drawer==='lab'?'검색 실험실':'기록 살펴보기'}}</h2><button @click="drawer=null" aria-label="닫기">✕</button></header>
+      <template v-if="drawer==='lab'"><p>검색 결과를 비교하는 로컬 설정이란다. 기본값으로도 바로 질문할 수 있어.</p><label>검색 방식<select aria-label="검색 방식" v-model="labMode"><option>similarity</option><option>mmr</option></select></label><label>본문 Top-k <input type="number" v-model.number="topK" min="1" max="15"></label><label class="check"><input type="checkbox" v-model="refresh">실패·빈 결과 다시 조회</label><p class="muted">이후 질문에 적용되며 서버 기본값은 바꾸지 않는단다.</p><pre>{{labData}}</pre><p v-if="labData && !labData.source_contact_configured" class="muted">출처 식별용 HISTORY_SOURCE_CONTACT 설정이 필요하단다.</p></template>
+      <template v-else-if="detailMessage"><nav class="detail-tabs"><button v-for="t in ['인용과 원문','확인 범위']" @click="detailTab=t" :class="{active:detailTab===t}">{{t}}</button></nav>
+        <template v-if="detailTab==='인용과 원문'"><p v-if="!used(detailMessage).length">아직 인용할 자료를 찾지 못했구나.</p><section v-for="n in orderedSources" :key="n" :class="['source-detail',{selected:n===sourceNumber}]"><template v-if="detailMessage.sources[n-1]"><span class="eyebrow">근거 {{n}} · {{detailMessage.sources[n-1].metadata.source_kind}}</span><h3>{{detailMessage.sources[n-1].metadata.title}}</h3><small>{{detailMessage.sources[n-1].metadata.date}}</small><template v-if="detailMessage.sources[n-1].metadata.source_kind==='한문 원문 전사본'"><div class="source-translation"><span class="eyebrow">AI 한글 번역 · 기존 국역과 구분</span><p v-if="translationFor(detailMessage.sources[n-1])?.loading" role="status">한문 기록을 한글로 옮기는 중이란다…</p><p v-else-if="translationFor(detailMessage.sources[n-1])?.translation" class="source-text">{{translationFor(detailMessage.sources[n-1]).translation}}</p><template v-else><p v-if="translationFor(detailMessage.sources[n-1])?.error" class="muted">{{translationFor(detailMessage.sources[n-1]).error}}</p><button class="translate-button" @click="translateSource(detailMessage.sources[n-1])">이 본문 한글로 읽기 ↗</button></template><small>현재 인용된 본문 범위의 번역이야. AI가 옮긴 문장이라 원문과 함께 읽어보렴.</small></div><details class="original-text"><summary>한문 원문 함께 보기</summary><p class="source-text">{{detailMessage.sources[n-1].text}}</p></details></template><p v-else class="source-text">{{detailMessage.sources[n-1].text}}</p><a :href="safeUrl(detailMessage.sources[n-1].metadata.url)" target="_blank" rel="noopener noreferrer">원출처 열기 ↗</a><template v-if="detailMessage.sources[n-1].metadata.license"><p class="license"><a :href="safeUrl(detailMessage.sources[n-1].metadata.license)" target="_blank" rel="noopener noreferrer">{{detailMessage.sources[n-1].metadata.license_name || 'CC BY-SA 4.0'}}</a> · {{detailMessage.sources[n-1].metadata.attribution || detailMessage.sources[n-1].metadata.service+' 기여자'}} · 번역·요약 등 변경 포함</p><a v-if="detailMessage.sources[n-1].metadata.revision_url" :href="safeUrl(detailMessage.sources[n-1].metadata.revision_url)" target="_blank" rel="noopener noreferrer">사용 판본·기여 이력 ↗</a></template></template></section></template>
+        <template v-else><section v-for="c in detailMessage.answer.claims" class="source-detail"><span class="claim-label">검토할 주장 · 확정 답변과 구분</span><h3 class="claim-text">“{{c.claim}}”</h3><span class="eyebrow">{{c.verdict}}</span><p>{{c.explanation}}</p><blockquote v-for="e in c.evidence">{{e.quote}} [근거 {{e.number}}]</blockquote></section><p v-for="u in detailMessage.answer.unknowns">{{u}}</p><details v-if="detailMessage.research?.records?.length"><summary>검색 후보 · 인용 근거와 구분</summary><p v-for="r in detailMessage.research.records"><a :href="safeUrl(r.url)" target="_blank" rel="noopener noreferrer">{{r.title}}</a></p></details></template>
+      </template>
+    </section>
+  </div>
+</div><noscript>이 화면은 JavaScript가 필요합니다.</noscript></body></html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+{
+  "question": "임진왜란 때 선조는 언제 의주로 피란 갔어?",
+  "seconds": 65.3,
+  "periods": [
+    {
+      "id": "ITKC_JT_N0_A25",
+      "title": "선조 25년",
+      "year": 1592,
+      "url": "https://db.itkc.or.kr/dir/node?dataId=ITKC_JT_N0_A25"
+    }
+  ],
+  "counts": {
+    "metadata_chunks": 542,
+    "body_chunks": 48
+  },
+  "response": {
+    "text": "제공된 실록 한문 전사본에 따르면, 선조는 1592년(선조 25년) 6월 22일 의주에 도착했다. 이는 서울 출발일이 아니라 용천에서 출발해 의주에 이른 날이며, 양력으로 환산하지 않은 사료상의 날짜이다.",
+    "evidence": [
+      {
+        "number": 8,
+        "quote": "날짜: 선조 25년 6월 22일 (1592년, 사료의 날짜 표기·양력 환산 안 함)"
+      },
+      {
+        "number": 8,
+        "quote": "上發龍川，次義州，御于牧使衙舍。"
+      }
+    ]
+  },
+  "ai_translation": {
+    "text": "경술일, 임금이 용천을 출발하여 의주에 이르렀고, 목사의 관아에 머물렀다.",
+    "evidence": [
+      {
+        "number": 8,
+        "quote": "○庚戌，上發龍川，次義州，御于牧使衙舍。"
+      }
+    ]
+  },
+  "interpretation": {
+    "text": "AI 해설: 이 기록은 선조가 용천을 떠나 의주에 도착하고, 의주 목사의 관아를 숙소로 삼았다는 흐름이다. 따라서 이날의 ‘출발’ 장소는 용천이고 ‘도착’ 장소는 의주로 구분된다.",
+    "evidence": [
+      {
+        "number": 8,
+        "quote": "上發龍川，次義州，御于牧使衙舍。"
+      }
+    ]
+  },
+  "has_primary_evidence": true,
+  "collected_ids": [
+    "wikisource:zh:1093403:59",
+    "wiki:ko:6319",
+    "wiki:ko:74067"
+  ],
+  "failed_ids": [
+    "ITKC_JT_N0_A25_06A_22A_00010"
+  ],
+  "expected_date_found": true,
+  "sources": [
+    {
+      "title": "선조 25년 6월 22일 · 실록 한문 전사본",
+      "rights_status": "permitted",
+      "chunk_hash": "1460f0b9a60a3e5dbe616bfd25c65f49f89824e91cbd43abc41fc2f056cfd9bc",
+      "is_primary": true,
+      "item_kind": "article",
+      "item_id": "ITKC_JT_N0_A25",
+      "source_kind": "한문 원문 전사본",
+      "date": "선조 25년 6월 22일",
+      "revision_url": "https://zh.wikisource.org/w/index.php?oldid=2339021",
+      "collection": "선조실록(宣祖實錄)",
+      "relation": "b6b87d852495d7ea7402f9c1013514cfd0b70985408e2880bdeeac380444a1d9",
+      "article_id": "wikisource:zh:1093403:59",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "service": "위키문헌 (Wikisource)",
+      "chunk": 0,
+      "index_signature": "d16d83c79f007a44b61af775de58ad9aab9de440252ba779a633421990d531af",
+      "url": "https://zh.wikisource.org/wiki/%E6%9C%9D%E9%AE%AE%E7%8E%8B%E6%9C%9D%E5%AF%A6%E9%8C%84/%E5%AE%A3%E7%A5%96%E5%AF%A6%E9%8C%84/%E4%BA%8C%E5%8D%81%E4%BA%94%E5%B9%B4#6%E6%9C%8822%E6%97%A5"
+    }
+  ],
+  "license": "Wikimedia 자료에 기초한 번역·해설: CC BY-SA 4.0, 원문 기여자·판본은 sources 참조. AI 번역 및 재구성."
+}

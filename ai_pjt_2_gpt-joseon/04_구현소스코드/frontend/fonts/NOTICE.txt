@@ -1,0 +1,47 @@
+GPT-Joseon 글꼴 안내
+
+본문·제목: 네이버 마루 부리(MaruBuri Regular)
+이 화면에는 네이버에서 제공한 마루 부리 글꼴이 적용되어 있습니다.
+저작권: NAVER 및 네이버 문화재단. 글꼴 파일을 수정하지 않았습니다.
+공식 소개·저작권 안내: https://hangeul.naver.com/font
+공식 배포: https://hangeul.pstatic.net/hangeul_static/webfont/zips/maruburi.zip
+라이선스 전문 안내: https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=3497
+
+버튼·메뉴·입력창: Pretendard Variable
+Copyright (c) 2021, Kil Hyung-jin (https://github.com/orioncactus/pretendard)
+SIL Open Font License 1.1. 전문은 동봉한 Pretendard-LICENSE.txt 참조.
+공식 저장소: https://github.com/orioncactus/pretendard
+
+외부 CDN 호출 없이 프로젝트에 포함된 원본 배포 파일을 사용합니다.
+
+
+상단 GPT-Joseon 제목: 네이버 나눔손글씨 붓(NanumBrush)
+이 화면에는 네이버에서 제공한 나눔손글씨 붓 글꼴이 적용되어 있습니다.
+저작권: NAVER 및 네이버 문화재단. 원본 배포 파일을 수정하지 않았습니다.
+공식 소개: https://m-hangeul.naver.com/font/detail/nanum-brush
+공식 배포: https://hangeul.pstatic.net/hangeul_static/webfont/NanumBrush/NanumBrush.woff
+이용 조건: https://hangeul.naver.com/font (네이버 글꼴 저작권 안내)
+
+
+현재 상단 GPT-Joseon 제목: 연성체(Yeon Sung)
+공식 배포: https://github.com/google/fonts/tree/main/ofl/yeonsung
+SIL Open Font License 1.1. 전문은 동봉한 yeonsung-OFL.txt 참조.
+원본 글꼴 파일을 수정하지 않았습니다.
+
+
+漢字: Noto Serif CJK KR Regular (본명조 한국어 자형)
+한자와 한문 문장부호에 한정하여 사용합니다. 역사적 실록 활자의 복원본은 아닙니다.
+공식 배포: https://github.com/notofonts/noto-cjk/tree/main/Serif
+SIL Open Font License 1.1. 전문은 NotoSerifCJK-LICENSE.txt 참조.
+원본 배포 파일을 수정하지 않았습니다.
+
+
+현재 페이지 제목 이미지: 미원체로 제작한 title-miwon-v1.png
+저작권: 대상 주식회사. 공식 배포: https://www.miwon.co.kr/miwon-font/
+웹사이트용 제목 이미지로 사용하며 폰트 파일은 서버에 탑재하거나 배포하지 않습니다.
+미원체 파일의 수정 및 재배포와 임베딩은 하지 않습니다.
+
+
+현재 페이지 제목 이미지: 윤디자인 월인석보체로 제작한 title-wolin-v1.png
+공식 안내: https://font.co.kr/collection/sub?family_idx=10123
+웹디자인 제작물로 사용하며 폰트 파일은 서버에 탑재하거나 재배포하지 않습니다.

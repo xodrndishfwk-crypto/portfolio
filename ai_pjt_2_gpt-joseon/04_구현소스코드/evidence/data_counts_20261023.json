@@ -1,0 +1,37 @@
+{
+  "period_count": 542,
+  "kings": 27,
+  "collections": [
+    {
+      "name": "royal_year_meta_v2_31a7134a5b",
+      "count": 542
+    },
+    {
+      "name": "external_docs_31a7134a5b",
+      "count": 469
+    },
+    {
+      "name": "article_meta_31a7134a5b",
+      "count": 0
+    }
+  ],
+  "sample_metadata": "title: 태조 1년\ncollection: 태조실록(太祖實錄)\nking: 태조\nyear: 1392\nreign_label: 1년\ndate_original: 태조 1년 (1392)\nera_original: 홍무25\ncategory: \nsnippet: 태조 1년, 서기 1392년에 해당하는 기록 탐색 항목. 사건 본문이 아닌 연도 색인이다.\nid: ITKC_JT_A0_A01",
+  "repeat_index": {
+    "before": {
+      "metadata_chunks": 542,
+      "body_chunks": 469
+    },
+    "first_new": 0,
+    "second_new": 0,
+    "after": {
+      "metadata_chunks": 542,
+      "body_chunks": 469
+    }
+  },
+  "store": {
+    "metadata": 699,
+    "bodies": 68,
+    "validated": 68,
+    "failed_or_pending": 631
+  }
+}

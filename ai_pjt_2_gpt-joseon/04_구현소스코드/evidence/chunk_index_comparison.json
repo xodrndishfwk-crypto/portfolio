@@ -1,0 +1,36 @@
+{
+  "title": "일제강점기",
+  "article_id": "wiki:ko:6483",
+  "characters": 47531,
+  "method": "actual stored permitted text, actual Index.index_body, isolated Chroma, synthetic embeddings for count/structure only (not quality evaluation)",
+  "cases": [
+    {
+      "size": 600,
+      "overlap": 120,
+      "new_chunks": 133,
+      "persisted_chunks": 133,
+      "repeat_new_chunks": 0
+    },
+    {
+      "size": 1000,
+      "overlap": 0,
+      "new_chunks": 71,
+      "persisted_chunks": 71,
+      "repeat_new_chunks": 0
+    },
+    {
+      "size": 1000,
+      "overlap": 200,
+      "new_chunks": 73,
+      "persisted_chunks": 73,
+      "repeat_new_chunks": 0
+    },
+    {
+      "size": 1400,
+      "overlap": 280,
+      "new_chunks": 52,
+      "persisted_chunks": 52,
+      "repeat_new_chunks": 0
+    }
+  ]
+}

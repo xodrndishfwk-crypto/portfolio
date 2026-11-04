@@ -1,0 +1,15 @@
+{
+  "credential_hits": [],
+  "missing_ui_assets": [],
+  "source_file_count": 107,
+  "unittest_passed": 51,
+  "excluded": [
+    ".env",
+    ".venv",
+    "data",
+    "tmp",
+    "Excel",
+    "preview pages"
+  ],
+  "review_scope": "items 1 2 3 4 6; peer review deferred by user"
+}

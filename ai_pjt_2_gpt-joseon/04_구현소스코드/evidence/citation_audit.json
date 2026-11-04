@@ -1,0 +1,32 @@
+[
+  {
+    "field": "response",
+    "number": 9,
+    "quote_in_body": true
+  },
+  {
+    "field": "interpretation",
+    "number": 9,
+    "quote_in_body": true
+  },
+  {
+    "field": "aside",
+    "number": 9,
+    "quote_in_body": true
+  },
+  {
+    "field": "ai_translation",
+    "number": 9,
+    "quote_in_body": true
+  },
+  {
+    "field": "claim",
+    "number": 9,
+    "quote_in_body": true
+  },
+  {
+    "field": "claim",
+    "number": 9,
+    "quote_in_body": true
+  }
+]

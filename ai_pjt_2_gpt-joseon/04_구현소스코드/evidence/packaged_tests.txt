@@ -1,0 +1,59 @@
+test_cross_origin_request_cannot_spend_credits (test_api.APITests.test_cross_origin_request_cannot_spend_credits) ... ok
+test_missing_key_and_invalid_period_preserve_safe_errors (test_api.APITests.test_missing_key_and_invalid_period_preserve_safe_errors) ... ok
+test_static_frontend_and_periods (test_api.APITests.test_static_frontend_and_periods) ... ok
+test_event_questions_use_research (test_chronology.ChronologyTests.test_event_questions_use_research) ... ok
+test_followup_year (test_chronology.ChronologyTests.test_followup_year) ... ok
+test_graph_revalidates_followup_without_unrelated_web_evidence (test_chronology.ChronologyTests.test_graph_revalidates_followup_without_unrelated_web_evidence) ... ok
+test_known_year_and_citation (test_chronology.ChronologyTests.test_known_year_and_citation) ... ok
+test_natural_followup_keeps_verified_king (test_chronology.ChronologyTests.test_natural_followup_keeps_verified_king) ... ok
+test_transition_year_requires_date (test_chronology.ChronologyTests.test_transition_year_requires_date) ... ok
+test_aside_can_add_supported_new_detail (test_core.CoreTests.test_aside_can_add_supported_new_detail) ... ok
+test_cache_failure_and_empty (test_core.CoreTests.test_cache_failure_and_empty) ... ok
+test_citation_numbers_and_exact_quote (test_core.CoreTests.test_citation_numbers_and_exact_quote) ... ok
+test_empty_and_error_body (test_core.CoreTests.test_empty_and_error_body) ... ok
+test_exact_repetition_removed_from_aside (test_core.CoreTests.test_exact_repetition_removed_from_aside) ... ok
+test_fun_aside_still_requires_real_quote (test_core.CoreTests.test_fun_aside_still_requires_real_quote) ... ok
+test_graph_nodes (test_core.CoreTests.test_graph_nodes) ... ok
+test_late_conclusion_found_by_claim_is_not_lost_to_document_prefix (test_core.CoreTests.test_late_conclusion_found_by_claim_is_not_lost_to_document_prefix) ... ok
+test_metadata_cannot_establish_body_claim (test_core.CoreTests.test_metadata_cannot_establish_body_claim) ... ok
+test_metadata_not_fulltext (test_core.CoreTests.test_metadata_not_fulltext) ... ok
+test_new_primary_not_crowded_out_by_secondary_results (test_core.CoreTests.test_new_primary_not_crowded_out_by_secondary_results) ... ok
+test_no_body_storage_before_rights_check (test_core.CoreTests.test_no_body_storage_before_rights_check) ... ok
+test_search_cache_reuses_response_and_refreshes (test_core.CoreTests.test_search_cache_reuses_response_and_refreshes) ... ok
+test_store_dedup_relations (test_core.CoreTests.test_store_dedup_relations) ... ok
+test_universal_claim_not_proven_by_one_case (test_core.CoreTests.test_universal_claim_not_proven_by_one_case) ... ok
+test_xml_original_id_and_dates (test_core.CoreTests.test_xml_original_id_and_dates) ... ok
+test_different_king_overrides_selected_scope_without_dropping_metadata (test_research.ResearchTests.test_different_king_overrides_selected_scope_without_dropping_metadata) ... ok
+test_king_in_event_condition_does_not_bypass_evidence_selection (test_research.ResearchTests.test_king_in_event_condition_does_not_bypass_evidence_selection) ... ok
+test_king_only_does_not_limit_search_to_first_year (test_research.ResearchTests.test_king_only_does_not_limit_search_to_first_year) ... ok
+test_retry_rejects_invented_clue_and_bounds_requests (test_research.ResearchTests.test_retry_rejects_invented_clue_and_bounds_requests) ... ok
+test_search_completion_does_not_assert_verification (test_research.ResearchTests.test_search_completion_does_not_assert_verification) ... ok
+test_selected_period_survives_a_different_question_period (test_research.ResearchTests.test_selected_period_survives_a_different_question_period) ... ok
+test_year_document_cache_is_secondary_and_missing_page_is_not_fabricated (test_research.ResearchTests.test_year_document_cache_is_secondary_and_missing_page_is_not_fabricated) ... ok
+test_missing_claim_triggers_web_fetch_and_renumbers_citations (test_supplement.SupplementTests.test_missing_claim_triggers_web_fetch_and_renumbers_citations) ... ok
+test_encyclopedia_parser_excludes_metadata_and_media (test_teacher.TeacherTests.test_encyclopedia_parser_excludes_metadata_and_media) ... ok
+test_encyclopedia_search_excludes_popular_links (test_teacher.TeacherTests.test_encyclopedia_search_excludes_popular_links) ... ok
+test_hao_voice_and_system_prefaces_are_detected_but_quotes_are_preserved (test_teacher.TeacherTests.test_hao_voice_and_system_prefaces_are_detected_but_quotes_are_preserved) ... ok
+test_optional_null_fields_do_not_break_voice_check (test_teacher.TeacherTests.test_optional_null_fields_do_not_break_voice_check) ... ok
+test_style_repair_cannot_change_evidence_or_dates_in_translation (test_teacher.TeacherTests.test_style_repair_cannot_change_evidence_or_dates_in_translation) ... ok
+test_actual_reign_year_mapping (test_timeline.TimelineTests.test_actual_reign_year_mapping) ... ok
+test_catalogue_excludes_general_history_and_preserves_leap_month (test_timeline.TimelineTests.test_catalogue_excludes_general_history_and_preserves_leap_month) ... ok
+test_explicit_question_overrides_selected_hints (test_timeline.TimelineTests.test_explicit_question_overrides_selected_hints) ... ok
+test_real_catalogue_counts_and_extents (test_timeline.TimelineTests.test_real_catalogue_counts_and_extents) ... ok
+test_same_ce_year_multiple_reigns (test_timeline.TimelineTests.test_same_ce_year_multiple_reigns) ... ok
+test_chinese_year_labels (test_transcriptions.TranscriptionTests.test_chinese_year_labels) ... ok
+test_leap_month_not_confused (test_transcriptions.TranscriptionTests.test_leap_month_not_confused) ... ok
+test_reject_invalid_translation (test_translation.TranslationTests.test_reject_invalid_translation) ... ok
+test_reject_uncollected_text_and_unknown_source (test_translation.TranslationTests.test_reject_uncollected_text_and_unknown_source) ... ok
+test_translation_cached_and_bound_to_original (test_translation.TranslationTests.test_translation_cached_and_bound_to_original) ... ok
+test_free_chat_available_without_selection_or_articles (test_ui.UITests.test_free_chat_available_without_selection_or_articles) ... 2026-10-23 17:25:42.368 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_period_switch_keeps_global_and_period_chats_separate (test_ui.UITests.test_period_switch_keeps_global_and_period_chats_separate) ... 2026-10-23 17:25:42.870 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_story_citations_compact_translation_and_suggestion_click (test_ui.UITests.test_story_citations_compact_translation_and_suggestion_click) ... 2026-10-23 17:25:43.041 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 1.118s
+
+OK

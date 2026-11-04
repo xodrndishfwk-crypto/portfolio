@@ -1,0 +1,289 @@
+{
+  "question": "태종이 낙마한 일을 사관에게 알리지 말라고 했어?",
+  "scope": "current persisted real corpus; retrieve output before generation",
+  "results": [
+    {
+      "mode": "similarity",
+      "top_k": 3,
+      "seconds": 0.97,
+      "count": 9,
+      "unique_documents": 9,
+      "evidence": [
+        {
+          "rank": 1,
+          "article_id": "ITKC_JT_E0_A02",
+          "title": "문종 2년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 문종 2년\ncollection: 문종실록(文宗實錄)\nking: 문종\nyear: 1452\nreign_label: 2년\ndate_original: 문종 2년 (1452)\nera_original: 경태3\ncategory: \ns"
+        },
+        {
+          "rank": 2,
+          "article_id": "ITKC_JT_E0_A01",
+          "title": "문종 1년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 문종 1년\ncollection: 문종실록(文宗實錄)\nking: 문종\nyear: 1451\nreign_label: 1년\ndate_original: 문종 1년 (1451)\nera_original: 경태2\ncategory: \ns"
+        },
+        {
+          "rank": 3,
+          "article_id": "ITKC_JT_M0_A08",
+          "title": "명종 8년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 명종 8년\ncollection: 명종실록(明宗實錄)\nking: 명종\nyear: 1553\nreign_label: 8년\ndate_original: 명종 8년 (1553)\nera_original: 가정32\ncategory: \n"
+        },
+        {
+          "rank": 4,
+          "article_id": "wikisource:zh:1089958:24",
+          "title": "태종 4년 2월 8일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 태종 4년 2월 8일 (1404년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n2月8日\n○己卯，霧。\n○議政府設享于行在所。\n○上遣人獻鹿于太上殿及上王殿。\n○親御弓矢，馳馬射獐，因馬仆而墜，不傷。顧左右曰：「勿令史官知之。」"
+        },
+        {
+          "rank": 5,
+          "article_id": "wikisource:zh:1093394:81",
+          "title": "선조 16년 7월 16일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 선조 16년 7월 16일 (1583년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n7月16日"
+        },
+        {
+          "rank": 6,
+          "article_id": "wikisource:zh:1095369:21",
+          "title": "인조 2년 1월 21일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 인조 2년 1월 21일 (1624년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n1月21日\n○丙子，日有重暈，內暈有兩珥，暈上有戴。\n○領議政李元翼上箚，以爲：「兩湖之民，絶食者已多，而大同廳米布，前秋未捧及今春應捧者，一時皆"
+        },
+        {
+          "rank": 7,
+          "article_id": "wiki:ko:8650",
+          "title": "이이",
+          "source_kind": "웹 해설",
+          "chunk": 9,
+          "excerpt": "==== 관료 생활 초기 ====\n1564년(명종 19) 이이는 식년문과에 급제한 후 곧 호조좌랑이 되었다가 예조좌랑으로 전임하여 국가를 위해 일하기 시작하였다. 이때 이이는 왕실의 외척 윤원형이 승려 보우를 궁중에 끌어들여 비행을 "
+        },
+        {
+          "rank": 8,
+          "article_id": "wiki:ko:6608",
+          "title": "고종 (대한제국)",
+          "source_kind": "웹 해설",
+          "chunk": 34,
+          "excerpt": "==== 국고 탕진에 대한 비판 ====\n유학자 황현은 고종과 명성황후가 국고를 탕진했다는 점을 수시로 비판했다. 그리고 황현 자신의 저서 매천야록의 곳곳에서도 이를 언급하였다. 고종과 민비는 원자가 태어나자 궁중에서는 원자의 무병장"
+        },
+        {
+          "rank": 9,
+          "article_id": "wiki:ko:68578",
+          "title": "태종 (조선)",
+          "source_kind": "웹 해설",
+          "chunk": 7,
+          "excerpt": "==== 공신 숙청 ====\n태종은 왕권의 안정과 강화를 위해 자신을 등극하게 만들어준 공신들을 유배보내거나 처형했다. 이러한 태종의 노력이 바탕이 되어 당대와 다음인 세종 때에는 조선이 정치적 안정과 문화적·군사적 발전을 이루게 될"
+        }
+      ]
+    },
+    {
+      "mode": "similarity",
+      "top_k": 7,
+      "seconds": 1.39,
+      "count": 10,
+      "unique_documents": 9,
+      "evidence": [
+        {
+          "rank": 1,
+          "article_id": "ITKC_JT_E0_A02",
+          "title": "문종 2년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 문종 2년\ncollection: 문종실록(文宗實錄)\nking: 문종\nyear: 1452\nreign_label: 2년\ndate_original: 문종 2년 (1452)\nera_original: 경태3\ncategory: \ns"
+        },
+        {
+          "rank": 2,
+          "article_id": "ITKC_JT_E0_A01",
+          "title": "문종 1년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 문종 1년\ncollection: 문종실록(文宗實錄)\nking: 문종\nyear: 1451\nreign_label: 1년\ndate_original: 문종 1년 (1451)\nera_original: 경태2\ncategory: \ns"
+        },
+        {
+          "rank": 3,
+          "article_id": "ITKC_JT_M0_A08",
+          "title": "명종 8년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 명종 8년\ncollection: 명종실록(明宗實錄)\nking: 명종\nyear: 1553\nreign_label: 8년\ndate_original: 명종 8년 (1553)\nera_original: 가정32\ncategory: \n"
+        },
+        {
+          "rank": 4,
+          "article_id": "wikisource:zh:1089958:24",
+          "title": "태종 4년 2월 8일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 태종 4년 2월 8일 (1404년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n2月8日\n○己卯，霧。\n○議政府設享于行在所。\n○上遣人獻鹿于太上殿及上王殿。\n○親御弓矢，馳馬射獐，因馬仆而墜，不傷。顧左右曰：「勿令史官知之。」"
+        },
+        {
+          "rank": 5,
+          "article_id": "wikisource:zh:1093394:81",
+          "title": "선조 16년 7월 16일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 선조 16년 7월 16일 (1583년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n7月16日"
+        },
+        {
+          "rank": 6,
+          "article_id": "wikisource:zh:1095369:21",
+          "title": "인조 2년 1월 21일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 인조 2년 1월 21일 (1624년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n1月21日\n○丙子，日有重暈，內暈有兩珥，暈上有戴。\n○領議政李元翼上箚，以爲：「兩湖之民，絶食者已多，而大同廳米布，前秋未捧及今春應捧者，一時皆"
+        },
+        {
+          "rank": 7,
+          "article_id": "wiki:ko:8650",
+          "title": "이이",
+          "source_kind": "웹 해설",
+          "chunk": 9,
+          "excerpt": "==== 관료 생활 초기 ====\n1564년(명종 19) 이이는 식년문과에 급제한 후 곧 호조좌랑이 되었다가 예조좌랑으로 전임하여 국가를 위해 일하기 시작하였다. 이때 이이는 왕실의 외척 윤원형이 승려 보우를 궁중에 끌어들여 비행을 "
+        },
+        {
+          "rank": 8,
+          "article_id": "wiki:ko:6608",
+          "title": "고종 (대한제국)",
+          "source_kind": "웹 해설",
+          "chunk": 34,
+          "excerpt": "==== 국고 탕진에 대한 비판 ====\n유학자 황현은 고종과 명성황후가 국고를 탕진했다는 점을 수시로 비판했다. 그리고 황현 자신의 저서 매천야록의 곳곳에서도 이를 언급하였다. 고종과 민비는 원자가 태어나자 궁중에서는 원자의 무병장"
+        },
+        {
+          "rank": 9,
+          "article_id": "wiki:ko:68578",
+          "title": "태종 (조선)",
+          "source_kind": "웹 해설",
+          "chunk": 7,
+          "excerpt": "==== 공신 숙청 ====\n태종은 왕권의 안정과 강화를 위해 자신을 등극하게 만들어준 공신들을 유배보내거나 처형했다. 이러한 태종의 노력이 바탕이 되어 당대와 다음인 세종 때에는 조선이 정치적 안정과 문화적·군사적 발전을 이루게 될"
+        },
+        {
+          "rank": 10,
+          "article_id": "wiki:ko:68578",
+          "title": "태종 (조선)",
+          "source_kind": "웹 해설",
+          "chunk": 8,
+          "excerpt": "==== 집권 후반 ====\n\n1417년부터 퇴위 직전까지 그는 서운관(書雲觀)에 소장된 각종 예언 서적과 무속, 비기도참서를 혹세무민의 이유로 소각하도록 지시한다.\n태종의 장남 양녕대군은 왕세자인데도 학문 연마를 게을리하고, 자유분"
+        }
+      ]
+    },
+    {
+      "mode": "mmr",
+      "top_k": 7,
+      "seconds": 3.8,
+      "count": 13,
+      "unique_documents": 9,
+      "evidence": [
+        {
+          "rank": 1,
+          "article_id": "ITKC_JT_E0_A02",
+          "title": "문종 2년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 문종 2년\ncollection: 문종실록(文宗實錄)\nking: 문종\nyear: 1452\nreign_label: 2년\ndate_original: 문종 2년 (1452)\nera_original: 경태3\ncategory: \ns"
+        },
+        {
+          "rank": 2,
+          "article_id": "ITKC_JT_E0_A01",
+          "title": "문종 1년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 문종 1년\ncollection: 문종실록(文宗實錄)\nking: 문종\nyear: 1451\nreign_label: 1년\ndate_original: 문종 1년 (1451)\nera_original: 경태2\ncategory: \ns"
+        },
+        {
+          "rank": 3,
+          "article_id": "ITKC_JT_M0_A08",
+          "title": "명종 8년",
+          "source_kind": "항목 메타데이터",
+          "chunk": null,
+          "excerpt": "title: 명종 8년\ncollection: 명종실록(明宗實錄)\nking: 명종\nyear: 1553\nreign_label: 8년\ndate_original: 명종 8년 (1553)\nera_original: 가정32\ncategory: \n"
+        },
+        {
+          "rank": 4,
+          "article_id": "wikisource:zh:1089958:24",
+          "title": "태종 4년 2월 8일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 태종 4년 2월 8일 (1404년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n2月8日\n○己卯，霧。\n○議政府設享于行在所。\n○上遣人獻鹿于太上殿及上王殿。\n○親御弓矢，馳馬射獐，因馬仆而墜，不傷。顧左右曰：「勿令史官知之。」"
+        },
+        {
+          "rank": 5,
+          "article_id": "wikisource:zh:1093394:81",
+          "title": "선조 16년 7월 16일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 선조 16년 7월 16일 (1583년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n7月16日"
+        },
+        {
+          "rank": 6,
+          "article_id": "wikisource:zh:1095369:21",
+          "title": "인조 2년 1월 21일 · 실록 한문 전사본",
+          "source_kind": "한문 원문 전사본",
+          "chunk": 0,
+          "excerpt": "날짜: 인조 2년 1월 21일 (1624년, 사료의 날짜 표기·양력 환산 안 함)\n한문 원문 전사본:\n1月21日\n○丙子，日有重暈，內暈有兩珥，暈上有戴。\n○領議政李元翼上箚，以爲：「兩湖之民，絶食者已多，而大同廳米布，前秋未捧及今春應捧者，一時皆"
+        },
+        {
+          "rank": 7,
+          "article_id": "wiki:ko:8650",
+          "title": "이이",
+          "source_kind": "웹 해설",
+          "chunk": 9,
+          "excerpt": "==== 관료 생활 초기 ====\n1564년(명종 19) 이이는 식년문과에 급제한 후 곧 호조좌랑이 되었다가 예조좌랑으로 전임하여 국가를 위해 일하기 시작하였다. 이때 이이는 왕실의 외척 윤원형이 승려 보우를 궁중에 끌어들여 비행을 "
+        },
+        {
+          "rank": 8,
+          "article_id": "wiki:ko:6608",
+          "title": "고종 (대한제국)",
+          "source_kind": "웹 해설",
+          "chunk": 34,
+          "excerpt": "==== 국고 탕진에 대한 비판 ====\n유학자 황현은 고종과 명성황후가 국고를 탕진했다는 점을 수시로 비판했다. 그리고 황현 자신의 저서 매천야록의 곳곳에서도 이를 언급하였다. 고종과 민비는 원자가 태어나자 궁중에서는 원자의 무병장"
+        },
+        {
+          "rank": 9,
+          "article_id": "wiki:ko:68578",
+          "title": "태종 (조선)",
+          "source_kind": "웹 해설",
+          "chunk": 8,
+          "excerpt": "==== 집권 후반 ====\n\n1417년부터 퇴위 직전까지 그는 서운관(書雲觀)에 소장된 각종 예언 서적과 무속, 비기도참서를 혹세무민의 이유로 소각하도록 지시한다.\n태종의 장남 양녕대군은 왕세자인데도 학문 연마를 게을리하고, 자유분"
+        },
+        {
+          "rank": 10,
+          "article_id": "wiki:ko:68578",
+          "title": "태종 (조선)",
+          "source_kind": "웹 해설",
+          "chunk": 14,
+          "excerpt": "태종은 부왕 이성계가 세상을 떠나자 신덕왕후를 후궁으로 강등하고 정릉을 도성 밖 양주군 성북면 사한리(현재의 서울 성북구 정릉동)에 천장하라 명했다. \"옛 제왕의 능묘가 모두 도성 밖에 있는데 지금 정릉이 성안에 있는 것은 적당하지 "
+        },
+        {
+          "rank": 11,
+          "article_id": "wiki:ko:68578",
+          "title": "태종 (조선)",
+          "source_kind": "웹 해설",
+          "chunk": 16,
+          "excerpt": "=== 서얼 관리 규정 ===\n\n태종이 정비한 서얼 금고령과 적서 제도는 사실 조선 이전 시대 부터 존재하던 서얼 금고령과 적서 제도를 그대로 유지만 한 것에 불과하다. 오히려 태종은 서얼 금고령과 적서 제도를 규정하기 전에 한품 서"
+        },
+        {
+          "rank": 12,
+          "article_id": "wiki:ko:8650",
+          "title": "이이",
+          "source_kind": "웹 해설",
+          "chunk": 46,
+          "excerpt": "=== 학맥 ===\n이이는 학문적으로는 김종직 학파의 직계로서, 친구인 성혼과 함께 백인걸의 문하생이었다. 성혼은 백인걸 외에도 성수침에게도 사사했는데, 백인걸과 성수침은 조광조의 문인이었다. 이들의 친구였던 노수신 역시 이연경의 문"
+        },
+        {
+          "rank": 13,
+          "article_id": "wiki:ko:6608",
+          "title": "고종 (대한제국)",
+          "source_kind": "웹 해설",
+          "chunk": 20,
+          "excerpt": "고종은 생각해보겠다는 말로 통감을 달래어 내보냈다. 그는 직접 메모용지에 연필을 들고 대신들에게 가부(可否)를 따져 물었다. 그때 갑자기 한규설 참정 대신이 소리 높여 통곡을 하기 시작했던지라 별실로 데리고 갔는데, 그가 “너무 떼를"
+        }
+      ]
+    }
+  ]
+}

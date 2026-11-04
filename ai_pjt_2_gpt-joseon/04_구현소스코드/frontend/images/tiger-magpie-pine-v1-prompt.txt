@@ -1,0 +1,4 @@
+Tool: built-in image_gen; transparent_background=true
+References: user's tiger-magpie-pine minhwa composition; existing ink-garden-v1.png for pine and feather rendering style.
+Prompt:
+undefined
